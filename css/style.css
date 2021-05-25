@@ -1,0 +1,531 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+font-family: 'Cinzel', serif;
+background-color: rgb(0,0,0);
+}
+/*
+======================================================
+ Newsletter popup
+ ====================================================== */
+.Modal {
+	z-index: 1;
+	display: block;
+	padding-top: 10px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.5);
+}
+.modalContent {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+}
+.modal-inner { 
+	padding: 10px 10px; 
+	font-size: 42px;
+	color: white;
+	text-align: center;
+}
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.modal-close:hover,
+.modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Add Animation - Zoom in the Modal */
+.modalContent {
+  animation-name: zoom;
+  animation-duration: 0.7s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+blink {
+    animation: 1s linear infinite condemned_blink_effect;
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+/*
+======================================================
+ Header
+ ====================================================== */
+a {
+	text-decoration: none;
+}
+
+.header {
+	background-color: rgb(16,16,16);
+	border: 5px solid rgb(24,24,24); 
+	padding: 10px;
+}
+.header {
+	height: 145px;
+  	width: 98%;
+  	margin: auto;
+	top: 10px;
+}
+
+.header h1 {
+	float: left;
+	margin: 0px 10px;
+}
+nav {
+	float: right;
+}
+ul {
+	margin: 50px 30px 0px 0px;
+	float: right;
+}
+li {
+	display: inline-block;
+	font-size: 24px;
+	margin: 0px 40px 0px 0px;
+}
+li a{
+	color: white;
+}
+li a:hover {
+	color: skyblue;
+}
+/*
+======================================================
+ Intro
+ ====================================================== */
+.intro h1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
+.SM { 
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: -40px;
+	font-size: 32px;
+	text-align: center;
+}
+.SM .fa-facebook { 
+	bottom: 0; 
+	left: 0;
+}
+.SM .fa-twitter { 
+	bottom: 0; 
+	left: 0;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+/* Instagram */
+.fa-facebook {
+  color: white;
+}
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+/* Instagram */
+.fa-instagram {
+  color: white;
+}
+/* Instagram */
+.fa-youtube {
+  color: white;
+}
+.fa-spotify {
+  color: white;
+}
+.fa-apple {
+  color: white;
+}
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 170px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.new {
+  background-color: #282828;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  font-size: 42px;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  margin: 0px 160px 0px 160px;
+}
+
+audio {
+  top: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -120px;
+}
+@keyframes example {
+  from {background-color: #282828;}
+  to {background-color: #080808;}
+}
+#demo {
+	text-align: center;
+  	font-size: 60px;
+  	margin-top: 0px;
+  	color: white;
+  	padding: 40px;
+}
+
+/*
+======================================================
+ About
+ ====================================================== */
+.Miw {
+	width: 100%;
+}
+
+.Miw h1 {
+	width: 95%;
+	float: left;
+	font-size: 42px;
+	font-weight: 800;
+	color: white;
+	margin: 90px 0px 70px 10px;
+	border-bottom: 5px solid
+}
+.member-box{
+	width: 300px;
+	height: auto;
+	display: inline-block;
+	position: relative;
+	transition: .3s;
+	margin: -4px;
+}
+.member-box img{
+	width: 80%;
+	height: 80%;
+	transition: .3s;
+	border-radius: 4px;
+} 
+.member-box:hover img{
+	filter: blur(20px) brightness(60%);
+}
+.member-box :not(img){
+	position: absolute;
+	z-index: 1;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	opacity: 0;
+	transition: .3s;
+}
+.member-box h2 {
+	top: 50%;
+}
+.member-box:hover :not(img){
+	opacity: 1;
+}
+.member-box h2 {
+	font-size: 28px;
+	font-weight: 600;
+}
+.member-box h3 {
+	top: 60%;
+	font-size: 20px;
+	font-weight: 400;
+}
+.SM1 { 
+	display: inline-block;
+	font-size: 26px;
+	margin: 175px 0px 0px -20px;
+	position: static;
+}
+.SM1 .fa-instagram { 
+	bottom: 0; 
+	left: 40px;
+}
+.SM1 .fa-twitter { 
+	bottom: 0; 
+	left: 0;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+/* Instagram */
+.fa-instagram {
+  color: white;
+  top: 50%;
+}
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+
+/*
+======================================================
+History
+ ====================================================== */
+
+.Miw h4 {
+	width: 95%;
+	font-size: 42px;
+	font-weight: 800;
+	color: white;
+	margin: 70px 0px 70px 10px;
+	border-bottom: 5px solid
+}
+.Miw p {
+	width: 80%;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	margin: 15px 95px;
+	font-weight: 600;
+}
+
+
+/*
+======================================================
+ albums
+ ====================================================== */
+.albums {
+	width: 95%;
+	color: white;
+}
+.albums h4 {
+	width: 95%;
+	float: left;
+	font-size: 42px;
+	font-weight: 800px;
+	margin: 50px 0px 80px 10px;
+	border-bottom: 5px solid;
+}
+.albumsart h5 {
+	font-size: 26px;
+	font-weight: 400px;
+	text-align: center;
+}
+.albumsart {
+	width: 33.33%;
+	margin: 20px 0px 35px 50px;
+	float: left;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgb(48,48,48);
+  padding: 25px;
+}
+
+.content img{
+	width: 100%;
+}
+.content a{
+	font-size: 14px;
+	font-weight: 600px;
+	color: white;
+}
+
+.content a:hover {
+	color: skyblue;
+}
+
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption a {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    font-size: 46px;
+    color: #ccc;
+    padding: 70px 20px;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content2 {
+    width: 100%;
+  }
+} 
+
+/*
+======================================================
+ live
+ ====================================================== */
+ .live {
+ 	width: 95%;
+ }
+ .live h6 {
+	font-size: 42px;
+	font-weight: 800px;
+	color: white;
+	margin: 50px 0px 0px 10px;
+	border-bottom: 5px solid;
+ }
+.first  {
+	font-size: 32px;
+	font-weight: 600;
+	color: white;
+	float: left;
+	margin: 50px 0% 0px 2%;
+}
+.first p {
+	font-size: 24px;
+	font-weight: 100;
+	color: white;
+	float: left;
+	margin: 50px 0% 0px 2%;
+	margin-bottom: 50px;
+}
+.first-box {
+	float: left;
+	display: inline-block;
+	margin: 50px 5% 30px 5%;
+}
+.second {
+	font-size: 32px;
+	font-weight: 600;
+	color: white;
+	float: left;
+	margin: 50px 0% 0px 2%;
+}
+.second p {
+	font-size: 24px;
+	font-weight: 100;
+	color: white;
+	float: left;
+	margin: 50px 0% 0px 2%;
+	margin-bottom: 50px;
+}
+.second-box {
+	float: left;
+	display: inline-block;
+	margin: 50px 5% 30px 5%;
+}
